@@ -93,7 +93,7 @@
   "Insert a horizontal separator line."
   (lobsters-ui--insert-formatted-text "\n")
   (lobsters-ui--insert-formatted-text (lobsters-ui--string-separator) nil "#666666")
-  (lobsters-ui--insert-formatted-text "\n"))
+  (lobsters-ui--insert-formatted-text "\n\n"))
 
 (defun lobsters-ui--format-tags (tags)
   "Format TAGS list for display."
