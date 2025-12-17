@@ -225,7 +225,9 @@
   (interactive)
   (let ((separator-regex (concat "^" (regexp-quote (lobsters-ui--string-separator)) "$")))
     (if (search-forward-regexp separator-regex nil t)
-	(forward-line 1)
+	(progn
+	  (forward-line 2)
+	  (recenter-top-bottom))
       (message "No more stories"))))
 
 (defun lobsters-ui--goto-previous-story ()
@@ -235,7 +237,8 @@
     (search-backward-regexp separator-regex nil t)
     (unless (search-backward-regexp separator-regex nil t)
       (goto-char (point-min)))
-    (forward-line 1)))
+    (forward-line 2)
+    (recenter-top-bottom)))
 
 (defun lobsters-ui--toggle-browser ()
   "Toggle between eww and system browser."
