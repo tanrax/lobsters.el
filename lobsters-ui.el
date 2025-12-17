@@ -3,7 +3,7 @@
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
 ;; Author: Andros Fenollosa <hi@andros.dev>
-;; Version: 1.1
+;; Version: 1.2
 ;; URL: https://github.com/tanrax/lobsters.el
 ;; Package-Requires: ((emacs "25.1") (request "0.2.0") (visual-fill-column "2.4"))
 
